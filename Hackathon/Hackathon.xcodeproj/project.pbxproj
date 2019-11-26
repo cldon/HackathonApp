@@ -12,6 +12,9 @@
 		86DFD998238DBBC500181C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD996238DBBC500181C2F /* Main.storyboard */; };
 		86DFD99A238DBBC600181C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD999238DBBC600181C2F /* Assets.xcassets */; };
 		86DFD99D238DBBC600181C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD99B238DBBC600181C2F /* LaunchScreen.storyboard */; };
+		86DFD9A5238DD07C00181C2F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFD9A4238DD07C00181C2F /* HomeViewController.swift */; };
+		86DFD9A7238DD0F600181C2F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFD9A6238DD0F600181C2F /* ScheduleViewController.swift */; };
+		86DFD9A9238DD12500181C2F /* MyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFD9A8238DD12500181C2F /* MyEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		86DFD999238DBBC600181C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86DFD99C238DBBC600181C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86DFD99E238DBBC600181C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DFD9A4238DD07C00181C2F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		86DFD9A6238DD0F600181C2F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		86DFD9A8238DD12500181C2F /* MyEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				86DFD992238DBBC500181C2F /* AppDelegate.swift */,
 				86DFD994238DBBC500181C2F /* ViewController.swift */,
 				86DFD996238DBBC500181C2F /* Main.storyboard */,
+				86DFD9A4238DD07C00181C2F /* HomeViewController.swift */,
+				86DFD9A6238DD0F600181C2F /* ScheduleViewController.swift */,
+				86DFD9A8238DD12500181C2F /* MyEvents.swift */,
 				86DFD999238DBBC600181C2F /* Assets.xcassets */,
 				86DFD99B238DBBC600181C2F /* LaunchScreen.storyboard */,
 				86DFD99E238DBBC600181C2F /* Info.plist */,
@@ -137,6 +146,9 @@
 			files = (
 				86DFD995238DBBC500181C2F /* ViewController.swift in Sources */,
 				86DFD993238DBBC500181C2F /* AppDelegate.swift in Sources */,
+				86DFD9A9238DD12500181C2F /* MyEvents.swift in Sources */,
+				86DFD9A5238DD07C00181C2F /* HomeViewController.swift in Sources */,
+				86DFD9A7238DD0F600181C2F /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ALNZ62HNJR;
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ALNZ62HNJR;
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

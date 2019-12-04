@@ -7,13 +7,31 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class MyEventsViewController: UIViewController {
+    var userUID: String!
+    var userEmail: String!
+    var ref : DatabaseReference!
+    var userRef : DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference(withPath: "events")
+//        userRef = Database.database().reference(withPath: "users")
+        
+        Auth.auth().addStateDidChangeListener { auth, user in
+            guard let user = user else { return }
+            self.userUID = user.uid
+            self.userEmail = user.email
+//            let currentUserRef = self.usersRef.child(self.user.uid)
+//            currentUserRef.setValue(self.user.email)
+//            currentUserRef.onDisconnectRemoveValue()
+        }
     }
+    
+    
     
     
 }

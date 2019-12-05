@@ -10,6 +10,9 @@
 		867489032394F9610005DE1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 867489022394F9610005DE1B /* GoogleService-Info.plist */; };
 		867489072397ABC70005DE1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867489062397ABC70005DE1B /* LoginViewController.swift */; };
 		869B0AC6239854B200977D4F /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B0AC5239854B200977D4F /* MoreInfoViewController.swift */; };
+		869B0AC82399325E00977D4F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AC72399325E00977D4F /* logo.png */; };
+		869B0ACA239933BF00977D4F /* PennAppsSuperman.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AC9239933BF00977D4F /* PennAppsSuperman.png */; };
+		869B0ACC23993C7100977D4F /* PennAppsWonderWoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0ACB23993C7100977D4F /* PennAppsWonderWoman.png */; };
 		86DFD993238DBBC500181C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFD992238DBBC500181C2F /* AppDelegate.swift */; };
 		86DFD998238DBBC500181C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD996238DBBC500181C2F /* Main.storyboard */; };
 		86DFD99A238DBBC600181C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD999238DBBC600181C2F /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		867489062397ABC70005DE1B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		86748908239826AC0005DE1B /* Hackathon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hackathon.entitlements; sourceTree = "<group>"; };
 		869B0AC5239854B200977D4F /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		869B0AC72399325E00977D4F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		869B0AC9239933BF00977D4F /* PennAppsSuperman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PennAppsSuperman.png; sourceTree = "<group>"; };
+		869B0ACB23993C7100977D4F /* PennAppsWonderWoman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PennAppsWonderWoman.png; sourceTree = "<group>"; };
 		86DFD98F238DBBC500181C2F /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DFD992238DBBC500181C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DFD997238DBBC500181C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,10 +82,13 @@
 				86DFD992238DBBC500181C2F /* AppDelegate.swift */,
 				86DFD996238DBBC500181C2F /* Main.storyboard */,
 				867489062397ABC70005DE1B /* LoginViewController.swift */,
+				869B0ACB23993C7100977D4F /* PennAppsWonderWoman.png */,
 				86DFD9A4238DD07C00181C2F /* HomeViewController.swift */,
 				86DFD9A6238DD0F600181C2F /* ScheduleViewController.swift */,
 				869B0AC5239854B200977D4F /* MoreInfoViewController.swift */,
 				86DFD9A8238DD12500181C2F /* MyEvents.swift */,
+				869B0AC72399325E00977D4F /* logo.png */,
+				869B0AC9239933BF00977D4F /* PennAppsSuperman.png */,
 				86DFD999238DBBC600181C2F /* Assets.xcassets */,
 				86DFD99B238DBBC600181C2F /* LaunchScreen.storyboard */,
 				86DFD99E238DBBC600181C2F /* Info.plist */,
@@ -171,6 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DFD99D238DBBC600181C2F /* LaunchScreen.storyboard in Resources */,
+				869B0ACA239933BF00977D4F /* PennAppsSuperman.png in Resources */,
+				869B0AC82399325E00977D4F /* logo.png in Resources */,
+				869B0ACC23993C7100977D4F /* PennAppsWonderWoman.png in Resources */,
 				867489032394F9610005DE1B /* GoogleService-Info.plist in Resources */,
 				86DFD99A238DBBC600181C2F /* Assets.xcassets in Resources */,
 				86DFD998238DBBC500181C2F /* Main.storyboard in Resources */,

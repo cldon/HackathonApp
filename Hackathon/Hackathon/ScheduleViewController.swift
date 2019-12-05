@@ -39,8 +39,6 @@ class ScheduleViewController: UITableViewController {
             if let eventDicts = snapshot.value as? [[String : Any]] {
                 var newEvents = [Event]()
                 for dictValue in eventDicts {
-//                    let dictValue = eachDict.value
-                    
                     if let title = dictValue["title"] as? String, let date = dictValue["date"] as? String, let start = dictValue["start"] as? String, let end = dictValue["end"] as? String, let location = dictValue["location"] as? String, let details = dictValue["details"] as? String {
                         
                         newEvents.append(Event(title: title, date: date, start: start, end: end, location: location, details: details))
@@ -59,86 +57,13 @@ class ScheduleViewController: UITableViewController {
             //            currentUserRef.setValue(self.user.email)
             //            currentUserRef.onDisconnectRemoveValue()
         }
-        
-//        // Every 1 second, pick a random post and increment its upvotes
-//        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-//            if let randomPost = self.posts.randomElement() {
-//                self.updatePostUpvotes(with: randomPost.id, currentUpvotes: randomPost.upvotes)
-//            }
-//        }
-//
-//        // Every 5 seconds, delete the post with highest upvotes
-//        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { timer in
-//            if let highestPost = self.posts.max(by: { $0.upvotes < $1.upvotes }) {
-//                self.deletePost(with: highestPost.id)
-//            }
-//        }
-//
-//        // Every 4 seconds, create a new post
-//        Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { timer in
-//            self.createPost(title: "New Post \(Int.random(in: 1 ... 100))", body: "\(Date().description)", upvotes: Int.random(in: 0...10))
-//        }
     }
-    
-    
-//    // MARK: - Create Object
-//    // Create a post with given fields and random id
-//    func createPost(title: String, body: String, upvotes: Int = 0) {
-//        // Create a reference to the new post, identified by a random id. We will use this reference to set the value.
-//        let newPostRef = ref.child("posts").childByAutoId()
-//
-//        // If we need to know the post id (the string produced by childByAutoId), we can get it like this:
-//        let id = newPostRef.key ?? ""
-//
-//        // Create a dictionary representing the post. Notice we have both strings and ints, so we say "String : Any"
-//        let newPostDictionary: [String : Any] = [
-//            "title" : title,
-//            "body" : body,
-//            "upvotes" : upvotes,
-//            "id" : id
-//        ]
-//
-//        // Use the database reference to create a new post
-//        newPostRef.setValue(newPostDictionary)
-//    }
-    
-    
-//    // MARK: - Update Object
-//    // Update all fields of a post
-//    func updatePost(with id: String, to post: Post) {
-//        let postToUpdateRef = ref.child("posts").child(id)
-//        let updatedPostDictionary: [String : Any] = [
-//            "title" : post.title,
-//            "body" : post.body,
-//            "upvotes" : post.upvotes,
-//            "id" : post.id
-//        ]
-//        postToUpdateRef.setValue(updatedPostDictionary)
-//    }
-    
-    
-//    // MARK: - Update Fields in an Object
-//    // Increment and update the upvote field of a post
-//    func updatePostUpvotes(with id: String, currentUpvotes: Int) {
-//        let postToUpdateRef = ref.child("posts").child(id).child("upvotes")
-//        postToUpdateRef.setValue(currentUpvotes + 1)
-//    }
     
     // Update the title field of a post
     func updatePostTitle(with id: String, newTitle: String) {
         let postToUpdateRef = ref.child("posts").child(id)
         postToUpdateRef.setValue(newTitle, forKey: "title")
     }
-    
-    
-    // MARK: - Delete Object
-    // Remove post at specific id
-    func deletePost(with id: String) {
-        ref.child("posts").child(id).removeValue()
-    }
-    
-    
-    
     
     // MARK: - Table View Functions
     override func numberOfSections(in tableView: UITableView) -> Int {

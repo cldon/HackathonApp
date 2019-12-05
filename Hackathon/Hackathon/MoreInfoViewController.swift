@@ -11,11 +11,6 @@ import Firebase
 
 class MoreInfoViewController: UIViewController {
     
-//    var pName:String = ""
-//    var pDescrip: String = ""
-//    var pDesig: String = ""
-//    var pImg: String = ""
-    
     var eName : String = ""
     var eTime : String = ""
     var eLoc : String = ""
@@ -31,7 +26,6 @@ class MoreInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         name?.text = eName
         time?.text = eTime
         location?.text = eLoc
@@ -39,18 +33,9 @@ class MoreInfoViewController: UIViewController {
     }
     
     @IBAction func favoritesDidPress(_ sender: UIButton) {
-        print ("Time to add " + String(eventID) + " to user " + uid)
-        let ref = Database.database().reference().child("saved").child(uid)
-//        let newPostRef = ref.child("saved").child(uid)
-        let newPostDictionary: [String : Any] = [
-            "title" : eventID,
-            ]
-        ref.setValue(newPostDictionary)
-
+        let ref = Database.database().reference()
+        let newRef = ref.child("userData").child(uid).childByAutoId()
+        newRef.setValue(eventID)
     }
-    
-    
-    
-    
 }
 

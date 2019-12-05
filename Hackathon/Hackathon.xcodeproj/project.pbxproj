@@ -13,6 +13,13 @@
 		869B0AC82399325E00977D4F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AC72399325E00977D4F /* logo.png */; };
 		869B0ACA239933BF00977D4F /* PennAppsSuperman.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AC9239933BF00977D4F /* PennAppsSuperman.png */; };
 		869B0ACC23993C7100977D4F /* PennAppsWonderWoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0ACB23993C7100977D4F /* PennAppsWonderWoman.png */; };
+		869B0ACE2399782900977D4F /* old.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0ACD2399782800977D4F /* old.png */; };
+		869B0AD02399786600977D4F /* home (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0ACF2399786600977D4F /* home (1).png */; };
+		869B0AD22399788B00977D4F /* home (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AD12399788B00977D4F /* home (2).png */; };
+		869B0AD4239978B100977D4F /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AD3239978B000977D4F /* home.png */; };
+		869B0AD6239978E800977D4F /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AD5239978E800977D4F /* calendar.png */; };
+		869B0AD82399796100977D4F /* terms-and-conditions.png in Resources */ = {isa = PBXBuildFile; fileRef = 869B0AD72399796100977D4F /* terms-and-conditions.png */; };
+		869B0ADA23997A3000977D4F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B0AD923997A3000977D4F /* MainTabBarViewController.swift */; };
 		86DFD993238DBBC500181C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFD992238DBBC500181C2F /* AppDelegate.swift */; };
 		86DFD998238DBBC500181C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD996238DBBC500181C2F /* Main.storyboard */; };
 		86DFD99A238DBBC600181C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DFD999238DBBC600181C2F /* Assets.xcassets */; };
@@ -31,6 +38,13 @@
 		869B0AC72399325E00977D4F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		869B0AC9239933BF00977D4F /* PennAppsSuperman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PennAppsSuperman.png; sourceTree = "<group>"; };
 		869B0ACB23993C7100977D4F /* PennAppsWonderWoman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PennAppsWonderWoman.png; sourceTree = "<group>"; };
+		869B0ACD2399782800977D4F /* old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old.png; sourceTree = "<group>"; };
+		869B0ACF2399786600977D4F /* home (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home (1).png"; sourceTree = "<group>"; };
+		869B0AD12399788B00977D4F /* home (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home (2).png"; sourceTree = "<group>"; };
+		869B0AD3239978B000977D4F /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		869B0AD5239978E800977D4F /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		869B0AD72399796100977D4F /* terms-and-conditions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "terms-and-conditions.png"; sourceTree = "<group>"; };
+		869B0AD923997A3000977D4F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		86DFD98F238DBBC500181C2F /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DFD992238DBBC500181C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DFD997238DBBC500181C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,13 +95,20 @@
 				86748908239826AC0005DE1B /* Hackathon.entitlements */,
 				86DFD992238DBBC500181C2F /* AppDelegate.swift */,
 				86DFD996238DBBC500181C2F /* Main.storyboard */,
+				869B0AD923997A3000977D4F /* MainTabBarViewController.swift */,
 				867489062397ABC70005DE1B /* LoginViewController.swift */,
 				869B0ACB23993C7100977D4F /* PennAppsWonderWoman.png */,
 				86DFD9A4238DD07C00181C2F /* HomeViewController.swift */,
 				86DFD9A6238DD0F600181C2F /* ScheduleViewController.swift */,
 				869B0AC5239854B200977D4F /* MoreInfoViewController.swift */,
+				869B0ACD2399782800977D4F /* old.png */,
 				86DFD9A8238DD12500181C2F /* MyEvents.swift */,
+				869B0ACF2399786600977D4F /* home (1).png */,
 				869B0AC72399325E00977D4F /* logo.png */,
+				869B0AD72399796100977D4F /* terms-and-conditions.png */,
+				869B0AD12399788B00977D4F /* home (2).png */,
+				869B0AD5239978E800977D4F /* calendar.png */,
+				869B0AD3239978B000977D4F /* home.png */,
 				869B0AC9239933BF00977D4F /* PennAppsSuperman.png */,
 				86DFD999238DBBC600181C2F /* Assets.xcassets */,
 				86DFD99B238DBBC600181C2F /* LaunchScreen.storyboard */,
@@ -179,13 +200,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869B0AD02399786600977D4F /* home (1).png in Resources */,
+				869B0AD6239978E800977D4F /* calendar.png in Resources */,
 				86DFD99D238DBBC600181C2F /* LaunchScreen.storyboard in Resources */,
 				869B0ACA239933BF00977D4F /* PennAppsSuperman.png in Resources */,
 				869B0AC82399325E00977D4F /* logo.png in Resources */,
+				869B0AD4239978B100977D4F /* home.png in Resources */,
 				869B0ACC23993C7100977D4F /* PennAppsWonderWoman.png in Resources */,
+				869B0ACE2399782900977D4F /* old.png in Resources */,
+				869B0AD82399796100977D4F /* terms-and-conditions.png in Resources */,
 				867489032394F9610005DE1B /* GoogleService-Info.plist in Resources */,
 				86DFD99A238DBBC600181C2F /* Assets.xcassets in Resources */,
 				86DFD998238DBBC500181C2F /* Main.storyboard in Resources */,
+				869B0AD22399788B00977D4F /* home (2).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +268,7 @@
 				867489072397ABC70005DE1B /* LoginViewController.swift in Sources */,
 				86DFD993238DBBC500181C2F /* AppDelegate.swift in Sources */,
 				86DFD9A9238DD12500181C2F /* MyEvents.swift in Sources */,
+				869B0ADA23997A3000977D4F /* MainTabBarViewController.swift in Sources */,
 				869B0AC6239854B200977D4F /* MoreInfoViewController.swift in Sources */,
 				86DFD9A5238DD07C00181C2F /* HomeViewController.swift in Sources */,
 				86DFD9A7238DD0F600181C2F /* ScheduleViewController.swift in Sources */,

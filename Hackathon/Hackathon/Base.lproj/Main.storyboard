@@ -178,7 +178,7 @@ kfeeney@seas.upenn.edu
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5vP-yx-lgp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="Mmb-yv-Gb2"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home.png" id="Mmb-yv-Gb2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNF-20-NcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,6 +192,7 @@ kfeeney@seas.upenn.edu
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.61033242730000004" blue="0.58318599550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fMQ-zp-Zhb" customClass="EventTableCell" customModule="Hackathon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="70"/>
@@ -428,16 +429,20 @@ kfeeney@seas.upenn.edu
         <!--Map-->
         <scene sceneID="v3P-Bq-uFn">
             <objects>
-                <tabBarController title="Map" id="prS-JI-rD0" sceneMemberID="viewController">
+                <tabBarController title="Map" id="prS-JI-rD0" customClass="MainTabBarViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BzP-Bz-bc2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.90093749999999995" green="0.33425964765100669" blue="0.58854124252903961" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.61033242733413062" blue="0.5831859955437535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabBar" destination="BzP-Bz-bc2" id="FL0-Cc-Ku1"/>
                         <segue destination="LgN-c4-gko" kind="relationship" relationship="viewControllers" id="6Ng-JT-94f"/>
                         <segue destination="0cF-Zn-5BD" kind="relationship" relationship="viewControllers" id="hQt-qI-u0e"/>
                         <segue destination="7y4-XN-Iac" kind="relationship" relationship="viewControllers" id="fe6-5h-Tj4"/>
+                        <segue destination="Bod-2m-ZMt" kind="relationship" relationship="viewControllers" id="Dta-51-WKZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RS-Ks-eFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -487,17 +492,17 @@ We expect participants to follow these rules at the hackathon, workshop venues, 
                         <color key="backgroundColor" red="0.72356790299999996" green="0.90075278280000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="m7i-hE-R5f"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Conduct" id="ALb-Qy-O1d"/>
+                    <tabBarItem key="tabBarItem" title="Conduct" selectedImage="terms-and-conditions.png" id="ALb-Qy-O1d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCV-36-E1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.376811594202906" y="-294.64285714285711"/>
+            <point key="canvasLocation" x="393" y="-111"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="EhZ-dC-HOJ">
             <objects>
                 <navigationController title="Schedule" automaticallyAdjustsScrollViewInsets="NO" id="0cF-Zn-5BD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="9pR-T0-6v3" userLabel="Schedule"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" selectedImage="calendar.png" id="9pR-T0-6v3" userLabel="Schedule"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hjh-YB-b1o">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -512,11 +517,11 @@ We expect participants to follow these rules at the hackathon, workshop venues, 
             </objects>
             <point key="canvasLocation" x="45" y="550"/>
         </scene>
-        <!--Favorited-->
+        <!--Navigation Controller-->
         <scene sceneID="Imc-S3-wl2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bod-2m-ZMt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorited" id="1v7-3X-2GO"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="1v7-3X-2GO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZCD-s3-lrE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -535,6 +540,9 @@ We expect participants to follow these rules at the hackathon, workshop venues, 
     <resources>
         <image name="PennAppsSuperman.png" width="1594" height="1595"/>
         <image name="PennAppsWonderWoman.png" width="1842" height="1842"/>
+        <image name="calendar.png" width="24" height="24"/>
+        <image name="home.png" width="24" height="24"/>
         <image name="logo.png" width="709" height="709"/>
+        <image name="terms-and-conditions.png" width="24" height="24"/>
     </resources>
 </document>
